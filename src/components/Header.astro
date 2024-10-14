@@ -4,7 +4,13 @@
       <nav>
         <ul class="flex space-x-8 text-white min-h-16 items-center">
           <li class="h-16 content-center hover:bg-azulOscuro px-3"><a href="/" class="">Inicio</a></li>
-          <li class="h-16 content-center hover:bg-azulOscuro px-3"><a href="/hehEcuador" class="hover:text-gray-300">HeH Ecuador</a></li>
+          <li class="h-16 content-center hover:bg-azulOscuro px-3 relative group">
+            <a href="/hehEcuador" class="hover:text-gray-300 flex items-center h-full">HeH Ecuador</a>
+            <div class="absolute left-0 hidden group-hover:block bg-white text-black shadow-md mt-0 py-2 rounded-b z-10">
+              <a href="/historia" class="block px-4 py-2 hover:bg-gray-100">Historia</a>
+              <a href="/quienes-somos" class="block px-4 py-2 hover:bg-gray-100">Quienes Somos</a>
+            </div>
+          </li>
           <li class="h-16 content-center hover:bg-azulOscuro px-3"><a href="/resposabilidad" class="hover:text-gray-300">Responsabilidad Corporativa</a></li>
           <li class="h-16 content-center hover:bg-azulOscuro px-3"><a href="/politicasgi" class="hover:text-gray-300">Política SGI</a></li>
           <li class="h-16 content-center hover:bg-azulOscuro px-3"><a href="/contacto" class="hover:text-gray-300">Contacto</a></li>
