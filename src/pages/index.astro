@@ -8,6 +8,7 @@ import ParallaxBanner from "../components/parallaxBanner.astro";
 import Filosofia from "../components/filosofia.astro";
 import Video from "../components/video.astro";
 import Proyectos from "../components/Proyectos.astro";
+import Footer from "../components/Footer.astro";
 ---
 <MainLayout>
 <html>
@@ -16,12 +17,12 @@ import Proyectos from "../components/Proyectos.astro";
 	<Slide/>
 	<Links/>
 	<Presentation/>
-	<ParallaxBanner url='src/assets/img/parallaxBanner.jpg' text={"Apoyando al desarrollo sostenible de nuestro país"}/>
+	<ParallaxBanner url='/img/parallaxBanner.jpg' text={"Apoyando al desarrollo sostenible de nuestro país"}/>
 	<Filosofia/>
 	<Video/>
 	<Proyectos/>
-	<ParallaxBanner url='src/assets/img/Pry_aloag.jpg' text={""}/>
-	
+	<ParallaxBanner url='img/Pry_aloag.jpg' text={""}/>
+	<Footer/>
     <slot />
   </body>
 </html>

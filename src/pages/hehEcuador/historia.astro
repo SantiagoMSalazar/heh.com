@@ -1,0 +1,32 @@
+---
+import Header from "../../components/Header.astro";
+import MainLayout from "../../layouts/MainLayout.astro";
+import Content from "../../content/historia.text.md";
+import Footer from "../../components/Footer.astro";
+---
+<MainLayout>
+    <body class="flex flex-col min-h-screen">
+      <Header />
+      <main class="flex-grow">
+        <div class="container mx-auto px-4 py-12 max-w-6xl">
+          <div class="text-center space-y-4">
+            <h1 class="text-4xl font-bold">HISTORIA</h1>
+            <h2 class="text-3xl font-bold">Julio Hidalgo González</h2>
+            <i class="text-2xl mb-2">Pasión por el trabajo</i>
+            <div class="flex justify-center mb-12">
+              <img 
+                src="/img/julio_hidalgo.jpg" 
+                alt="Imagen de Julio Hidalgo González"
+                class="max-w-full h-96 rounded-lg shadow-lg"
+              />
+            </div>
+            <div class="prose mx-auto text-sm text-justify max-w-6xl space-y-6">
+              <Content />
+            </div>
+          </div>
+        </div>
+      </main>
+      <slot />
+    </body>
+    <Footer />
+  </MainLayout>
