@@ -1,0 +1,57 @@
+---
+import Header from "../components/Header.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+
+import Footer from "../components/Footer.astro";
+---
+<MainLayout>
+    <body class="flex flex-col min-h-screen">
+      <Header />
+<div class="container mx-auto px-4 py-8 max-w-4xl">
+    <h1 class="text-3xl font-bold text-center mb-8">QUIENES SOMOS</h1>
+    
+    <div class="text-justify mb-8">
+      <p class="mb-4">
+        Hidalgo e Hidalgo S.A. (HeH Constructores), constituida en Ecuador en 1969, es una empresa líder en construcción y gerencia de infraestructura, trabaja en obras principalmente en las áreas de vialidad, puentes, túneles, saneamiento, electrificación, puertos, riego y edificaciones. Proyectos que contribuyen con la competitividad de nuestro país, clave para consolidar el crecimiento económico y apoyar la tarea de inclusión social. 
+      </p>
+      <p class="mb-4">
+        Nos llena de satisfacción el poder aportar para conseguir una mayor integración y mejor conectividad entre poblaciones, pueblos, cantones, ciudades, provincias y regiones que garanticen el desarrollo sostenible de nuestro Ecuador.
+      </p>
+      <p>
+        Los méritos que han caracterizado nuestro trabajo, son el cumplimiento contractual con eficiencia, la observancia de estándares de alta calidad con registro de costos adecuados, el logro de buenos rendimientos, la creación de fuentes de trabajo y la garantía de cumplimiento en los plazos. 
+      </p>
+      <p>
+        En estos años de trabajo, ha sido decisivo el gran nivel de confianza de nuestros clientes, la excelencia en obras, la gestión responsable y una indeclinable perseverancia de transitar por caminos firmes. 
+      </p>
+    </div>
+  
+    <div class="mb-8">
+      <h2 class="text-2xl font-bold text-center mb-4">MISIÓN</h2>
+      <p class="text-center">
+        Brindar servicios de ingeniería, construcción, mantenimiento y administración de infraestructura, con excelencia, oportunidad y responsabilidad social; mediante elevados estándares de calidad, preservación del medio ambiente, seguridad y salud ocupacional; para contribuir al desarrollo sostenible de nuestro País. 
+      </p>
+    </div>
+  
+    <div class="mb-8">
+      <h2 class="text-2xl font-bold text-center mb-4">VISIÓN</h2>
+      <p class="text-center">
+        Ser reconocida como una empresa constructora líder en el mercado nacional e internacional, con excelencia en su modelo de gestión y procesos de innovación, para mejorar la calidad de vida a sus trabajadores, generando bienestar a la sociedad. 
+      </p>
+    </div>
+  
+    <div>
+      <h2 class="text-2xl font-bold text-center mb-4">NUESTROS VALORES</h2>
+      <ul class="flex flex-col items-center">
+        <li class="mb-2">Integridad</li>
+        <li class="mb-2">Respeto</li>
+        <li class="mb-2">Lealtad</li>
+        <li class="mb-2">Transparencia</li>
+        <li>Solidaridad</li>
+      </ul>
+    </div>
+  </div>
+</main>
+<slot />
+</body>
+<Footer />
+</MainLayout>
