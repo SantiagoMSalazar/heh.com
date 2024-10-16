@@ -1,0 +1,26 @@
+---
+import Header from "../../components/Header.astro";
+import MainLayout from "../../layouts/MainLayout.astro";
+import Content from "../../content/Mensaje.text.md";
+import Footer from "../../components/Footer.astro";
+---
+<MainLayout>
+    <body class="flex flex-col min-h-screen">
+      <Header />
+      <main class="flex-grow">
+        <div class="container mx-auto px-4 py-24 max-w-6xl">
+          <div class="text-center space-y-4">
+            <h1 class="text-4xl font-bold">MENSAJE</h1>
+            <h2 class="text-lg font-bold">"El ejemplo de trabajo, tenacidad y perseverancia de nuestro fundador, el Ingeniero Julio Hidalgo González, nos ha provisto de esa fuerza intangible que nos proyecta hacia el futuro para seguir siendo la primera empresa constructora del país"</h2>
+            <h3 class="text-lg mb-5 text-justify  font-bold">Ing. Juan Fco. Hidalgo Barahona</h3>
+            <div class="prose mx-auto text-sm text-justify max-w-6xl space-y-8">
+              <Content />
+
+            </div>
+          </div>
+        </div>
+      </main>
+      <slot />
+    </body>
+    <Footer />
+  </MainLayout>
